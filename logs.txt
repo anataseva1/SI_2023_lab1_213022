@@ -1,0 +1,28 @@
+commit 8284e974a0e2a9d9647e30d15e4d5b3fbee0c265 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: anataseva1 <109041580+anataseva1@users.noreply.github.com>
+Date:   Tue Apr 4 03:07:48 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit 2e9b89e1a6ac361b273e342084d9c88cb9db9ec5
+Merge: 647cc02 b807f44
+Author: anataseva1 <109041580+anataseva1@users.noreply.github.com>
+Date:   Tue Apr 4 03:09:43 2023 +0200
+
+    Merge branch 'bug2'
+
+commit b807f44d3c45614b3d40d96675d48f65308cce1c (origin/bug2, bug2)
+Author: anataseva1 <109041580+anataseva1@users.noreply.github.com>
+Date:   Tue Apr 4 03:06:48 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 647cc02c9a9571bd313d75218a382872058e4fc9 (origin/bug1, bug1)
+Author: anataseva1 <109041580+anataseva1@users.noreply.github.com>
+Date:   Tue Apr 4 03:06:03 2023 +0200
+
+    Fix wrong loop for reading
+
+commit 086a895d5827aa20769d15e8922421d3c339082c
+Author: anataseva1 <109041580+anataseva1@users.noreply.github.com>
+Date:   Tue Apr 4 03:05:11 2023 +0200

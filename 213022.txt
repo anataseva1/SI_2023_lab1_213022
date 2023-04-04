@@ -1,0 +1,113 @@
+4. mkdir SI_2023_lab1_213022
+   cd SI_2023_lab1_213022
+   git init
+Креираме нов директориум и во него го иницијализираме гит.
+
+5. git remote add origin https://github.com/anataseva1/SI_2023_lab1_213022.git
+Со ова го поврзуваме локалниот со remote репозиториумот.
+
+6. notepad README.md
+   git add README.md
+   git commit -m "Initial commit"
+Го креираме фајлот, го ставаме на сцена и потоа му правиме комит со пораката Initial commit.
+
+7. notepad SILab1.java
+   git add SILab1.java
+   git commit -m "Add java class"
+Креираме фајл, го ставаме на сцена и му правиме комит со пораката Add java class
+
+9. git branch bug1
+   git branch bug2
+   git branch bug3
+Креираме 3 нови гранки со имињата bug1, bug2 и bug3.
+
+10. git checkout bug1
+Со оваа команда се префрламе на гранката bug1.
+
+11. notepad SILab1.java
+    git add SILab1.java
+    git commit -m "Fix wrong loop for reading"
+Ја поправаме грешката во for циклусот, го ставаме фајлот на сцена и му правиме комит со пораката Fix wrong loop for reading.
+
+12. git checkout bug2
+Со оваа команда се префрламе на гранката bug2.
+
+13. notepad SILab1.java
+    git add SILab1.java
+    git commit -m "Fix wrong condition in filterOddNumbers"
+Ја поправаме грешката во условот на методот, го ставаме фајлот на сцена и му правиме комит со пораката Fix wrong condition in filterOddNumbers.
+
+14. git checkout bug3
+Со оваа команда се префрламе на гранката bug3.
+
+15. notepad SILab1.java
+    git add SILab1.java
+    git commit -m "Fix method sumEvenNumbers"
+Ја поправаме грешката во методот sumEvenNumbers, го ставаме фајлот на сцена и му правиме комит со пораката Fix method sumEvenNumbers.
+
+16. git push --all origin
+Со оваа команда ќе ги прикачеме сите гранки на remote репото истовремено.
+
+17. git checkout master
+Со оваа команда се префрламе на гранката master.
+
+18. git merge bug1
+    Updating 85f1ffb..5de8e95
+    Fast-forward
+    SILab1.java | 2 +-
+    1 file changed, 1 insertion(+), 1 deletion(-)
+Ја споивме гранката bug1 со мастер преку fast-forward спојување. Не може да се појават конфликти со fast forward спојување.
+
+19. git push --all origin
+Синхронизираме
+
+20. git merge bug2
+    Auto-merging SILab1.java
+    Merge made by the 'ort' strategy.
+    SILab1.java | 2 +-
+    1 file changed, 1 insertion(+), 1 deletion(-)
+Ја спојуваме гранката bug2 со master.
+
+21. git push --all origin
+Синхронизираме
+
+22. git checkout bug3
+Со оваа команда се префрламе на гранката bug3.
+
+23. git rebase master
+    Successfully rebased and updated refs/heads/bug3.
+Правиме rebase на гранката bug3 со master.
+
+24. git checkout master
+Со оваа команда се префрламе на гранката master.
+
+25. git merge bug3
+    Updating c032861..03c0339
+    Fast-forward
+    SILab1.java | 4 ++--
+    1 file changed, 2 insertions(+), 2 deletions(-)
+Ја спојуваме гранката bug3 со master преку fast forward спојување.
+
+26. git push --all --force origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anataseva1/SI_2023_lab1_213022.git
+ + 4f35eda...8284e97 bug3 -> bug3 (forced update)
+   2e9b89e..8284e97  master -> master
+Синхронизираме со force.
+
+27. notepad logs.txt
+    git log
+    notepad 213022.txt
+    git add --all
+    git commit -m "Final commit"
+Ги копираме логовите и ги ставаме во фајлот, го додаваме фајлот за документацијата. Ги ставаме на сцена и им правиме commit со пораката "Final commit".
+
+28. git push --all origin
+Синхронизираме
+
